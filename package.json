@@ -1,0 +1,16 @@
+{
+  "name": "console",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "John Papa <john@johnpapa.net> (http://johnpapa.net/)",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.4.0",
+    "winston": "^1.0.1"
+  }
+}
