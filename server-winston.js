@@ -1,13 +1,13 @@
 'use strict';
 
 var winston = require('winston'),
-
     transports = [],
     handlers = [];
 
 transports.push(new winston.transports.File(
     {filename: 'aggr.log'}
 ));
+
 handlers.push(new winston.transports.File(
     {filename: 'exception.log'}
 ));
@@ -25,7 +25,7 @@ for (var i = 0, l = 22; i < l; i++) {
 
 var start = Date.now();
 
-log.log(data);
+log.log('info', data);
 
 console.log('wrote %d bytes in %dms', data.length, Date.now() - start);
 
